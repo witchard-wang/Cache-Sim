@@ -1,8 +1,12 @@
-# Cache-Simulator
-# Authors: Richard Wang   - Elijah Hawkins
-# Date: 04/30/2020
-# Section: 511            - 509
-# E-mail: r.wang@tamu.edu - hawkeli@tamu.edu
+A cache is a structure within a computer that stores the data or contents of the main memory that are used frequently by CPU. 
+This project aims to simulate a one level cache through the command line.  
+
+Current Features: <br>
+Cache Associativity - (1,2,4) <br>
+Cache Replacement Policy - (1) Random Replacement (2) LRU <br>
+Cache Write Policy - (1) write-through policy (2) write-back policy <br>
+Cache Miss Policy - (1) write-allocate (2) no write-allocate 
+
 Compiled and run through command line on Python 3.7.7
 
 to run cachesimulator enter:
