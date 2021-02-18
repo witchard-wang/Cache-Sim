@@ -1,8 +1,5 @@
-#Authors: Richard Wang - Elijah Hawkins
 # Authors: Richard Wang   - Elijah Hawkins
 # Date: 04/30/2020
-# Section: 511            - 509
-# E-mail: r.wang@tamu.edu - hawkeli@tamu.edu
 #cache simulator 
 #file: cachesimulator.py
 
@@ -51,15 +48,17 @@ class Simulator(object):
         while not((E != 1) or (E != 2) or (E != 4)):
             E = int(input("Not a valid input (enter 1,2, or 4): "))
 
-        rep = int(input("replacement policy: "))
-        hit = int(input("write hit policy: "))
-        miss = int(input("write miss policy: "))
+        rep = int(input("replacement policy (1=RR, 2 = LRU): "))
+        hit = int(input("write hit policy(1 = write-back, 2 = write-through: "))
+        miss = int(input("write miss policy (1 = write-allocate, 2 = no write-allocate): "))
+
+        invalid = "Not a valid input (enter 1 or 2): "
         while not(rep != 1 or rep != 2):
-            rep = int(input("Not a valid input (enter 1 or 2): "))
+            rep = int(input(invalid))
         while not(hit != 1 or hit != 2):
-            hit = int(input("Not a valid input (enter 1 or 2): "))
+            hit = int(input(invalid))
         while not(miss != 1 or miss != 2):
-            miss = int(input("Not a valid input (enter 1 or 2): "))
+            miss = int(input(invalid))
 
         self.cacheSim = cache.cache(S, E, B, rep, hit, miss, self.mem_RAM.ramCnt, self.mem_RAM.ram)
         print("cache successfuly configured: ")

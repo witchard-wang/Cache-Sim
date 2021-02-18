@@ -1,8 +1,5 @@
 # File: cache.py
 # Authors: Richard Wang   - Elijah Hawkins
-# Date: 04/30/2020
-# Section: 511            - 509
-# E-mail: r.wang@tamu.edu - hawkeli@tamu.edu
 
 #contains the cache module including function definitions
 #for different cache methods such as read, write, cache view and cache dump
